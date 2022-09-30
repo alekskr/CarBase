@@ -1,44 +1,65 @@
 [
     {
-        "auto": "skoda",
-        "model": "rapid",
-        "transmission": "robot",
-        "engine_volume": "1.4l"
+        "auto": "Skoda",
+        "model": "Rapid",
+        "transmission": "Робот",
+        "engine": "\u0411\u0435\u043d\u0437\u0438\u043d",
+        "engine_volume": "1.4л"
     },
     {
-        "auto": "volvo",
-        "model": "xc90",
-        "transmission": "auto",
-        "engine_volume": "2l"
+        "auto": "Volvo",
+        "model": "Xc90",
+        "transmission": "Автомат",
+        "engine": "\u0411\u0435\u043d\u0437\u0438\u043d",
+        "engine_volume": "2л"
     },
     {
-        "auto": "renault",
-        "model": "duster",
-        "transmission": "manual",
-        "engine_volume": "2l"
+        "auto": "Renault",
+        "model": "Duster",
+        "transmission": "Механика",
+        "engine": "\u0414\u0438\u0437\u0435\u043b\u044c",
+        "engine_volume": "2л"
     },
     {
-        "auto": "kia",
-        "model": "ceed",
-        "transmission": "manual",
-        "engine_volume": "1.6"
+        "auto": "Kia",
+        "model": "Ceed",
+        "transmission": "Механика",
+        "engine": "\u0411\u0435\u043d\u0437\u0438\u043d",
+        "engine_volume": "1.6л"
     },
     {
-        "auto": "kia",
-        "model": "rio",
-        "transmission": "manual",
-        "engine_volume": "1.4"
+        "auto": "Kia",
+        "model": "Rio",
+        "transmission": "Механика",
+        "engine": "\u0411\u0435\u043d\u0437\u0438\u043d",
+        "engine_volume": "1.4л"
     },
     {
         "auto": "Opel",
         "model": "Astra",
-        "transmission": "manual",
-        "engine_volume": "1.6"
+        "transmission": "Механика",
+        "engine": "\u0411\u0435\u043d\u0437\u0438\u043d",
+        "engine_volume": "1.6л"
     },
     {
         "auto": "Kia",
         "model": "Sportage",
-        "transmission": "auto",
-        "engine_volume": "2.5"
+        "transmission": "Автомат",
+        "engine": "\u0414\u0438\u0437\u0435\u043b\u044c",
+        "engine_volume": "2.5л"
+    },
+    {
+        "auto": "Nissan",
+        "model": "Leaf",
+        "transmission": "Автомат",
+        "engine": "\u042d\u043b\u0435\u043a\u0442\u0440\u043e",
+        "engine_volume": "80кВт"
+    },
+    {
+        "auto": "Toyota",
+        "model": "Prius",
+        "transmission": "Автомат",
+        "engine": "\u0413\u0438\u0431\u0440\u0438\u0434",
+        "engine_volume": "1.5л"
     }
 ]
