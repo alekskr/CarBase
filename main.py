@@ -3,6 +3,7 @@ import pandas as pd
 
 
 def intro():
+    """Главное меню."""
     while True:
         print('''
    =База данных автомобилей=
@@ -23,7 +24,7 @@ def intro():
 
 
 def create_new_car():
-    """Заносит в базу новый автомобиль"""
+    """Занесение в базу нового автомобиля"""
     print('=Введите данные автомобиля=')
     auto = input('Марка: ').capitalize()
     model = input('Модель: ').capitalize()
@@ -39,17 +40,21 @@ def create_new_car():
 
 
 def print_all_cars():
-    """Выводит список марок"""
+    """Вывод всех марок по алфавиту"""
     with open('auto.json', 'r', encoding='utf-8') as json_file:
-        cars = json.load(json_file)
-        print('=Список всех автомобилей=')
-        # print(cars)
-        for i in cars:
-            print(i['auto'], i['model'], i['transmission'], i['engine'], i['engine_volume'])
-            # try:
-            #     print(i['auto'], i['model'], i['transmission'], i['engine'], i['engine_volume'])
-            # except KeyError:
-            #     print(i['auto'], i['model'], i['transmission'], i['engine'])
+        json_data = json.load(json_file)
+        print('\n=Список всех автомобилей=')
+
+        # Сортировка сначала по ключу авто, затем по ключу модель:
+        sorted_cars_dict = sorted(json_data, key=lambda x: (x['auto'], x['model']))
+
+        # Вывод всех значений в строку, кроме значения engine_volume, после которого вывод идет с новой строки
+        for i in sorted_cars_dict:
+            for k, v in i.items():
+                if k == 'engine_volume':
+                    print(v)
+                else:
+                    print(v, end=' ')
 
 
 class NewCar:
@@ -80,17 +85,3 @@ class NewCar:
 
 if __name__ == '__main__':
     intro()
-
-
-# new_car = {'auto': input('auto: ').capitalize(),
-#            'model': input('model: ').capitalize(),
-#            'transmission': input('transmission: ').lower(),
-#            'engine_volume': input('engine_volume: ')}
-
-# with open('C:\\Python projects\\study\\инструкции, циклы, функции, модули и т.д\\auto.json', 'r') as json_file:
-#     json_data = json.load(json_file)
-#     print(json_data)
-#     json_data.append(new_car)
-#
-# with open('C:\\Python projects\\study\\инструкции, циклы, функции, модули и т.д\\auto.json', 'w') as json_file:
-#     json.dump(json_data, json_file)
